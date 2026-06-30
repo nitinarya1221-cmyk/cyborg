@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Computer Vision | AI WORLD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081b29,#0b2c4d,#000);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+padding:120px 8% 60px;
+flex-wrap:wrap;
+}
+
+.content{
+flex:1;
+min-width:320px;
+}
+
+.content h1{
+font-size:55px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.content h2{
+margin-bottom:20px;
+}
+
+.content p{
+line-height:1.8;
+max-width:620px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 35px;
+background:#00eaff;
+color:black;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00eaff;
+}
+
+.image{
+flex:1;
+text-align:center;
+}
+
+.image img{
+width:450px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 0 25px #00eaff;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+.about{
+padding:60px 8%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#ddd;
+}
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:30px;
+    padding:12px 25px;
+    background:#00eaff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:600;
+    box-shadow:0 0 15px #00eaff;
+    transition:.3s;
+    z-index:1000;
+}
+
+.back-btn:hover{
+    background:#00ffff;
+    box-shadow:0 0 30px #00ffff;
+    transform:translateY(-3px);
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:60px 8%;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+border:1px solid rgba(0,234,255,.3);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00eaff;
+}
+
+.card h3{
+color:#00eaff;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.7;
+color:#ddd;
+}
+
+footer{
+background:#04111f;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.content h1{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="back-btn">← Back to Home</a>
+</header>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Computer Vision</h1>
+
+<h2>Enabling Computers to See and Understand Images</h2>
+
+<p>
+
+Computer Vision is a field of Artificial Intelligence that enables
+computers to analyze images and videos just like humans.
+It is used in facial recognition, medical imaging,
+self-driving cars, security systems, agriculture,
+manufacturing, and robotics.
+
+</p>
+
+<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+
+Learn More
+
+</button>
+
+</div>
+
+<div class="image">
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/0*D-aR4Nr8WKYaT77i.jpg">
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Computer Vision</h2>
+
+<p>
+
+Computer Vision combines Artificial Intelligence, Machine Learning,
+and Deep Learning to process digital images and videos.
+It allows machines to identify objects, detect faces,
+read text, recognize gestures, inspect products,
+and understand visual information automatically.
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>📷 Image Recognition</h3>
+
+<p>
+
+Detects and classifies objects, animals,
+people, and scenes in photographs.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>😊 Facial Recognition</h3>
+
+<p>
+
+Identifies individuals by analyzing facial features
+for authentication and security.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚗 Self-Driving Cars</h3>
+
+<p>
+
+Recognizes traffic signs, pedestrians,
+lanes, and obstacles for autonomous driving.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏥 Medical Imaging</h3>
+
+<p>
+
+Helps doctors detect diseases from X-rays,
+MRI scans, CT scans, and ultrasound images.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏭 Industrial Inspection</h3>
+
+<p>
+
+Automatically detects damaged products
+during manufacturing.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛰 Satellite Imaging</h3>
+
+<p>
+
+Analyzes satellite images for weather forecasting,
+urban planning, and disaster management.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛒 Retail Analytics</h3>
+
+<p>
+
+Tracks customer behavior and inventory
+using smart cameras.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤖 Robotics Vision</h3>
+
+<p>
+
+Allows robots to identify objects,
+navigate environments,
+and perform intelligent tasks.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 AI WORLD | Computer Vision</h3>
+
+</footer>
+
+</body>
+</html>

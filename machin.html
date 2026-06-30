@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Machine Learning | AI WORLD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081b29,#0b2c4d,#000);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00eaff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00eaff;
+}
+header{
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+padding:120px 8% 50px;
+flex-wrap:wrap;
+}
+
+.content{
+flex:1;
+min-width:300px;
+}
+
+.content h1{
+font-size:55px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.content h2{
+margin-bottom:20px;
+}
+
+.content p{
+max-width:600px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 35px;
+background:#00eaff;
+border:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00eaff;
+}
+
+.image{
+flex:1;
+text-align:center;
+}
+
+.image img{
+width:420px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 0 25px #00eaff;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:30px;
+    padding:12px 25px;
+    background:#00eaff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:600;
+    box-shadow:0 0 15px #00eaff;
+    transition:.3s;
+    z-index:1000;
+}
+
+.back-btn:hover{
+    background:#00ffff;
+    box-shadow:0 0 30px #00ffff;
+    transform:translateY(-3px);
+}
+.about{
+padding:60px 8%;
+text-align:center;
+}
+
+.about h2{
+font-size:38px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#ddd;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:60px 8%;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+border:1px solid rgba(0,234,255,.3);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00eaff;
+}
+
+.card h3{
+color:#00eaff;
+margin-bottom:15px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#04111f;
+margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.content h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="back-btn">← Back to Home</a>
+
+</header>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Machine Learning</h1>
+
+<h2>Teaching Computers to Learn from Data</h2>
+
+<p>
+
+Machine Learning is a branch of Artificial Intelligence that enables
+computers to learn from data without being explicitly programmed.
+It helps systems recognize patterns, make predictions, and improve
+their performance over time.
+
+</p>
+
+<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+Learn More
+</button>
+
+</div>
+
+<div class="image">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEIApyifud9aaPtu6Yj-b7o1mojkMuSW2X7F7ueLZV3QeopK-DK8UwyLy&s=10">
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Machine Learning</h2>
+
+<p>
+
+Machine Learning uses algorithms and statistical models to analyze
+large amounts of data. It is widely used in recommendation systems,
+fraud detection, medical diagnosis, autonomous vehicles,
+voice assistants, image recognition, and many other modern technologies.
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>📊 Supervised Learning</h3>
+<p>Models learn using labeled datasets to predict future outcomes accurately.</p>
+</div>
+
+<div class="card">
+<h3>📈 Unsupervised Learning</h3>
+<p>Discovers hidden patterns and relationships within unlabeled data.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Reinforcement Learning</h3>
+<p>AI learns through rewards and penalties while interacting with an environment.</p>
+</div>
+
+<div class="card">
+<h3>📷 Image Recognition</h3>
+<p>Detects and classifies objects, faces, and scenes in digital images.</p>
+</div>
+
+<div class="card">
+<h3>🛒 Recommendation Systems</h3>
+<p>Suggests products, videos, songs, and content based on user preferences.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Healthcare</h3>
+<p>Supports disease prediction, medical image analysis, and personalized treatments.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 AI WORLD | Machine Learning</h3>
+
+</footer>
+
+</body>
+</html>

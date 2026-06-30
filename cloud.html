@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Computing | AI WORLD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081b29,#0b2c4d,#000);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+padding:120px 8% 60px;
+flex-wrap:wrap;
+}
+
+.content{
+flex:1;
+min-width:320px;
+}
+
+.content h1{
+font-size:55px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.content h2{
+margin-bottom:20px;
+}
+
+.content p{
+line-height:1.8;
+max-width:620px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 35px;
+background:#00eaff;
+color:black;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00eaff;
+}
+
+.image{
+flex:1;
+text-align:center;
+}
+
+.image img{
+width:450px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 0 25px #00eaff;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+.about{
+padding:60px 8%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#ddd;
+}
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:30px;
+    padding:12px 25px;
+    background:#00eaff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:600;
+    box-shadow:0 0 15px #00eaff;
+    transition:.3s;
+    z-index:1000;
+}
+
+.back-btn:hover{
+    background:#00ffff;
+    box-shadow:0 0 30px #00ffff;
+    transform:translateY(-3px);
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:60px 8%;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+border:1px solid rgba(0,234,255,.3);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00eaff;
+}
+
+.card h3{
+color:#00eaff;
+margin-bottom:15px;
+}
+
+.card p{
+color:#ddd;
+line-height:1.7;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#04111f;
+margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.content h1{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="back-btn">← Back to Home</a>
+
+
+</header>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Cloud Computing</h1>
+
+<h2>Powering the Digital World</h2>
+
+<p>
+
+Cloud Computing delivers computing services such as servers,
+storage, databases, networking, software, and analytics over
+the internet. It enables businesses and individuals to access
+powerful computing resources anytime and anywhere without
+maintaining physical hardware.
+
+</p>
+
+<button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+Learn More
+</button>
+
+</div>
+
+<div class="image">
+
+<img src="https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Cloud Computing</h2>
+
+<p>
+
+Cloud Computing has transformed how organizations store data,
+run applications, and deliver online services. It provides
+scalable, secure, and cost-effective solutions for businesses,
+allowing users to access resources from anywhere with an internet
+connection. Popular cloud service providers include Amazon Web Services (AWS),
+Microsoft Azure, and Google Cloud Platform.
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>☁ Cloud Storage</h3>
+<p>Store files securely online and access them from any device.</p>
+</div>
+
+<div class="card">
+<h3>🖥 Virtual Servers</h3>
+<p>Create scalable virtual machines without purchasing hardware.</p>
+</div>
+
+<div class="card">
+<h3>💾 Databases</h3>
+<p>Manage cloud databases with high availability and performance.</p>
+</div>
+
+<div class="card">
+<h3>🔒 Cloud Security</h3>
+<p>Protect applications and data using encryption and identity management.</p>
+</div>
+
+<div class="card">
+<h3>📊 Big Data Analytics</h3>
+<p>Analyze massive datasets to discover insights and trends.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI in the Cloud</h3>
+<p>Run machine learning and AI applications using cloud platforms.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Global Access</h3>
+<p>Access applications and services from anywhere in the world.</p>
+</div>
+
+<div class="card">
+<h3>💰 Cost Efficiency</h3>
+<p>Pay only for the computing resources you use.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 AI WORLD | Cloud Computing</h3>
+
+</footer>
+
+</body>
+</html>

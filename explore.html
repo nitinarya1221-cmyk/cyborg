@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore AI | AI WORLD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#020b18,#071f38,#000);
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+}
+
+.hero h1{
+font-size:60px;
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:850px;
+line-height:1.8;
+color:#ddd;
+}
+
+.cards{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:18px;
+border:1px solid rgba(0,234,255,.3);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00eaff;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#00eaff;
+}
+
+.card p{
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.card a{
+display:inline-block;
+padding:12px 25px;
+background:#00eaff;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.card a:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00eaff;
+}
+
+footer{
+background:#04111f;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AI WORLD</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Explore contents</h1>
+
+<p>
+Discover the technologies that are changing the world. Learn how Artificial Intelligence is transforming industries, improving everyday life, and shaping the future through innovation and automation.
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>🤖 Artificial Intelligence</h2>
+<p>Understand the fundamentals of AI, including intelligent systems, automation, and decision-making.</p>
+<a href="ai.html">Learn More</a>
+</div>
+
+<div class="card">
+<h2>🧠 Machine Learning</h2>
+<p>Explore how computers learn from data to make predictions without being explicitly programmed.</p>
+<a href="machin.html">Learn More</a>
+</div>
+
+<div class="card">
+<h2>💬 Natural Language Processing</h2>
+<p>See how AI understands, analyzes, and generates human language for chatbots and virtual assistants.</p>
+<a href="natural.html">Learn More</a>
+</div>
+
+<div class="card">
+<h2>👁 Computer Vision</h2>
+<p>Learn how AI recognizes images, videos, and objects for applications like facial recognition and healthcare.</p>
+<a href="com.html">Learn More</a>
+</div>
+
+<div class="card">
+<h2>☁ Cloud Computing</h2>
+<p>Discover how cloud platforms provide computing power, storage, and AI services over the internet.</p>
+<a href="cloud.html">Learn More</a>
+</div>
+
+
+</section>
+
+<footer>
+
+<h3>© 2026 AI WORLD | Explore the Future of Technology</h3>
+
+</footer>
+
+</body>
+</html>

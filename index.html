@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyborg Themed Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top,#00f7ff33,transparent 40%),
+    radial-gradient(circle at bottom,#ff00ff22,transparent 45%);
+    z-index:-2;
+}
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-image:radial-gradient(cyan 1px,transparent 1px);
+    background-size:40px 40px;
+    opacity:.15;
+    animation:move 20s linear infinite;
+    z-index:-1;
+}
+
+@keyframes move{
+from{transform:translateY(0);}
+to{transform:translateY(-200px);}
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,.35);
+    z-index:100;
+}
+
+.logo{
+    font-size:30px;
+    color:#00ffff;
+    text-shadow:0 0 20px cyan;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+    text-shadow:0 0 15px cyan;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    padding:120px 8%;
+    flex-wrap:wrap;
+}
+
+.left{
+    flex:1;
+}
+
+.left h3{
+    color:#00ffff;
+    font-size:28px;
+}
+
+.left h1{
+    font-size:60px;
+    margin:20px 0;
+    text-shadow:0 0 20px cyan;
+}
+
+.left p{
+    max-width:550px;
+    line-height:1.8;
+    color:#d6d6d6;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 40px;
+    background:#00ffff;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px cyan;
+}
+
+.right{
+    flex:1;
+    text-align:center;
+}
+
+.right img{
+    width:420px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 0 35px cyan;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:80px 8%;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,.05);
+    border:1px solid cyan;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.5s;
+    opacity:0;
+    transform:translateY(80px);
+}
+
+.card h2{
+    color:#00ffff;
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px cyan;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    background:#000814;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.left h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="stars"></div>
+
+<header>
+
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<h3>Hello Human...</h3>
+
+<h1 id="typing"></h1>
+
+<p>
+Enter the futuristic world of Artificial Intelligence,
+Cybernetic Technology, Robotics, and Innovation.
+Experience tomorrow's technology today.
+</p>
+
+<button onclick="window.location.href='explore.html'">
+    Explore
+</button>
+
+</div>
+
+<div class="right">
+
+<img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section class="cards" id="features">
+
+<div class="card reveal">
+<h2>⚡ Artificial Intelligence</h2>
+<p>Powerful AI systems built for tomorrow.</p>
+</div>
+
+<div class="card reveal">
+<h2>🤖 Cybernetic Robotics</h2>
+<p>Human enhancement using futuristic robotics.</p>
+</div>
+
+<div class="card reveal">
+<h2>🚀 Space Technology</h2>
+<p>Innovations inspired by future civilizations.</p>
+</div>
+
+<div class="card reveal">
+<h2>🛰 Quantum Network</h2>
+<p>Ultra-fast interconnected cyber systems.</p>
+</div>
+
+<div class="card reveal">
+<h2>🔋 Unlimited Energy</h2>
+<p>Clean and efficient power solutions.</p>
+</div>
+
+<div class="card reveal">
+<h2>🛡 Cyber Security</h2>
+<p>Protecting digital worlds with AI defense.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 CYBORG X | Future Begins Today</h3>
+
+</footer>
+
+<script>
+
+const text="WELCOME TO THE CYBER FUTURE";
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,80);
+
+}
+
+}
+
+typing();
+
+function scrollPage(){
+
+document.getElementById("features").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+const reveal=document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+reveal.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.classList.add("show");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
